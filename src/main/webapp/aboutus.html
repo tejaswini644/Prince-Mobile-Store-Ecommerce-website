@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            display: grid;
+            background-color: #f4f4f4;
+            align-content: center;
+            min-height: 100vh;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 90vh;
+            width: 85vw;
+            margin: 0 auto;
+        }
+
+        .image {
+            background: url("aboutimages.png") center/cover no-repeat;
+        }
+
+        .content {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content h2 {
+            text-transform: uppercase;
+            font-size: 36px;
+            letter-spacing: 6px;
+            opacity: 0.9;
+        }
+
+        .content span {
+            height: 0.5px;
+            width: 80px;
+            background: #777;
+            margin: 30px 0;
+        }
+
+        .content p {
+            padding-bottom: 15px;
+            font-weight: 300;
+            opacity: 0.7;
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .links {
+            margin: 15px 0;
+        }
+
+        .links li {
+            border: 0.5px solid #777;
+            list-style: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            width: 160px;
+            text-align: center;
+        }
+
+        .links li a {
+            text-transform: uppercase;
+            color: #777;
+            text-decoration: none;
+        }
+
+        .links li:hover {
+            border-color: #06d6a0;
+        }
+
+        .links li:hover a {
+            color: #06d6a0;
+        }
+
+        .vertical-line {
+            height: 30px;
+            width: 0.5px;
+            background: #777;
+            margin: 0 auto;
+        }
+
+        .icons {
+            display: flex;
+            padding: 15px 0;
+        }
+
+        .icons li {
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .icons li i {
+            font-size: 26px;
+            opacity: 0.8;
+        }
+
+        .icons li i:hover {
+            color: #06d6a0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="image"></div>
+        <div class="content">
+            <h2>About Us</h2>
+            <span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+            <ul class="links">
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="vertical-line"></div>
+            <ul class="icons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
